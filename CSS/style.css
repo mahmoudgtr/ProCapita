@@ -1,0 +1,254 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Rubik', sans-serif;
+    background-color: #F7F7FA;
+}
+.container{
+    padding: 0 100px;
+}
+body{
+    overflow-x: hidden;
+}
+.material{
+    display: flex;
+    flex-wrap: wrap;
+    
+    justify-content: space-between;
+    
+}
+.caption{
+    background-color: transparent!important;
+    z-index: 545645646;
+}
+.caption h3{
+    text-transform: uppercase;
+    color: #799ef7;
+    display: inline-block;
+    border-radius: 15px;
+    padding: 2px 5px;
+    margin-bottom: 25px;
+    margin-top: 200px;
+}
+.caption h1{
+    margin-bottom: 25px;
+    font-size: 54px;
+    color: #423f53;
+    background-color: transparent;
+    
+}
+.caption p{
+    line-height: 30px;
+    color: #6f6d7d;
+    background-color: transparent;
+    font-size: 22px;
+    margin-bottom: 30px;
+    max-width: 500px;
+    
+}
+.caption a{
+    background: linear-gradient(to right, #08b4fe 0%, #5a37e4 100%);
+    padding: 15px 30px;
+    margin-bottom: 20px;
+    font-size: 16;
+    border-radius: 25px;
+    border: 0;
+    color :#fff;
+    text-decoration: none;
+    position: absolute;
+    transition: .3s;
+}
+.caption a:hover{
+    background: -webkit-linear-gradient(left, #fff 0%, #fff 100%);
+    background: -o-linear-gradient(left, #fff 0%, #fff 100%);
+    background: linear-gradient(to right, #fff 0%, #fff 100%);
+    color:#08b4fe;
+    transition: .3s;
+    
+}
+.clearfix{
+    clear: both;
+}
+.wrapper{
+    overflow: hidden;
+}
+.featuers{
+    margin-top: 50px;
+    margin-left: 50px;
+    padding-top: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    z-index: 48646846;
+    background-color: transparent;
+}
+.features-group-2{
+    margin-left: 40px;
+    margin-top: 50px;
+    padding-bottom: 40px;
+}
+.features-group-1,
+.features-group-2{
+    background-color: transparent;
+}
+.feature-1,
+.feature-2,
+.feature-3,
+.feature-4{
+    max-width: 250px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 11px;
+}
+
+.feature-2{
+    margin-top: 20px;
+}
+.feature-4{
+    margin-top: 20px;
+}
+.featuers i{
+    width: 90px;
+    height: 90px;
+    filter: drop-shadow(0 .1rem .2rem #f7f9fe);
+    border-radius: 40px;
+    color: #4579f5;
+}
+.feature-1 i{
+   padding: 18px; 
+}
+.feature-2 i{
+   padding: 30px; 
+}
+.feature-3 i{
+   padding: 22px; 
+}
+.feature-4 i{
+   padding: 26px; 
+}
+.featuers h2{
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding: 15px 0 15px 0; 
+    color: #423f53;
+    background-color: transparent;
+}
+
+.featuers p {
+    text-align: center;
+    color: #6f6d7d;
+    line-height: 1.5;
+    background-color: transparent;
+    font-size: 1rem;
+}
+.bg-img-1{
+    width: 350px;
+    position: absolute;
+    top: 300px;
+    left: -200px;
+    animation: rotateInfinite 35s Linear infinite;
+    }
+
+@keyframes rotateInfinite{
+    from{
+        transform: rotate(0deg);
+    }
+    to{
+        transform: rotate(359deg);
+     }
+    }
+
+.bg-img-2{
+    width: 300px;
+    position: absolute;
+    top: -20px;
+    right: -150px;
+    animation: rotateInfinite 35s Linear infinite;
+    }
+/* Resposive media queries */
+
+@media screen and (max-width: 1200px)and (min-width:767px) { /* Mobile and tablets*/
+    
+    .container{
+    padding: 0;
+}
+    .caption{
+           padding: 20px;
+    display: inline;
+    width: 100%;
+    margin: 0 100px;
+    }
+    .caption h3{
+        margin-top: 100px;
+        font-size: 50px;
+    }
+        .caption h1{
+        font-size: 83px;
+    }
+    .caption p{
+        line-height: 60px;
+        font-size: 57px;
+    }
+    .caption a{
+        margin-bottom: 20px;
+        font-size: 26px;
+    }
+    .featuers{
+    margin-left: 0px;
+    
+    padding: 20px 20px;
+    display: block;
+    width: 100%;
+    }
+    .feature-1,
+    .feature-3{
+        margin-bottom: 50px;
+    }
+    
+       .features-group-2{
+           margin-left: 0px;
+    } 
+
+    .feature-1,
+.feature-2,
+.feature-3,
+.feature-4{
+    width: 100%;}
+ 
+}
+
+@media screen and (min-width: 768px){ /* Small screen rules*/
+    
+
+    .feature-1,
+.feature-2,
+.feature-3,
+.feature-4{
+    max-width: 100%;}
+          
+              
+    }
+
+
+@media screen and (min-width: 929px){  /* Medium screen rules*/
+
+    .feature-1,
+.feature-2,
+.feature-3,
+.feature-4{
+   
+          
+              
+    
+}
+
+@media screen and (min-width: 1200px){ /* Large screen rules */
+   .feature-1,
+.feature-2,
+.feature-3,
+.feature-4{
+    max-width: 250px;}
+}
+
+
